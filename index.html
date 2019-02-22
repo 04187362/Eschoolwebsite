@@ -1,0 +1,314 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <!-- Required meta tags always come first -->
+        <meta charset="utf-8">
+        <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+        <meta http-equiv="x-ua-compatible" content="ie=edge">
+
+    <!-- Bootstrap CSS -->
+        <link rel="stylesheet" href="node_modules/bootstrap/dist/css/bootstrap.min.css">
+        <link rel="stylesheet" href="node_modules/font-awesome/css/font-awesome.min.css">
+        <link rel="stylesheet" href="node_modules/bootstrap-social/bootstrap-social.css">
+        <link rel="stylesheet" href="./style.css">
+        <title>ESCHOOL</title>
+    </head>
+    <body>
+            <nav class="navbar navbar-dark navbar-expand-sm bg-primary fixed-top">
+                    <div class="container-fluid">
+                       <a class="navbar-brand" href="#"><span class="fa fa-graduation-cap fa-lg"></span>E-SCHOOL</a>
+                       <button class="navbar-toggler" type="button" data-toggle="collapse" data-target="#Navbar">
+                            <span class="navbar-toggler-icon"></span>
+                       </button>
+                       <div class="collapse navbar-collapse" id="Navbar">
+                            <ul class="navbar-nav mr-auto">
+                                <li class="nav-item active"><a class="nav-link" href="#"><span class="fa fa-home fa-lg"></span> Home</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="#section2"><span class="fa fa-university fa-lg"></span> Courses</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="#footer"><span class="fa fa-info fa-lg"></span> About</a></li>
+                                <li class="nav-item active"><a class="nav-link" href="#section3"><span class="fa fa-address-card fa-lg"></span> Contact</a></li>
+                            </ul> 
+                            <span class="navbar-text loginCss">
+                                <a id="login"><span class="fa fa-sign-in"></span> Sign in</a>
+                            </span> 
+                            
+                            <span class="navbar-text">
+                                <a id="subscribe"><span class="fa fa-lock"></span> Sign up</a>
+                            </span>
+                    </div>
+                </nav>
+
+                <!--the login modal for the sign in button-->
+                <div id="loginModal" class="modal fade col-12" role="dialog">
+                    <div class="modal-dialog modal-lg" role="content">
+                            <div class="modal-content">
+                                <div class="modal-header bg-primary">
+                                        <h4>Sign in</h4>
+                                        <button type="butto" class="close" data-dismiss="modal">
+                                            &times;
+                                        </button>
+                                </div>
+                                <div class="modal-body">
+                                       <form action="">
+                                           <div class="form-group">
+                                                <label for="mail"><span class="fa fa-envelope-o fa-lg"></span> Email</label>
+                                                <input type="email" id="mail" class="form-control" placeholder="Enter your Email">
+                                           </div>
+
+                                           <div class="form-group">
+                                                    <label for="password"><span class="fa fa-lock fa-lg"></span> Password</label>
+                                                    <input type="password" id="password" class="form-control" placeholder="Enter your password">
+                                           </div>
+
+                                           <div class="col-sm-auto">
+                                                <div class="form-check">
+                                                    <input class="form-check-input" type="checkbox">
+                                                    <label class="form-check-label"> Remember me
+                                                    </label>
+                                                </div>
+                                         </div>
+
+                                         <div class="form-row">
+                                                <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                                <button type="submit" class="btn btn-primary btn-sm ml-1">Sign in</button>
+                                        </div>
+                                       </form> 
+                                </div>
+
+                            </div>
+                    </div>  
+                </div> 
+                <!--end of the sign in modal--> 
+
+                <!--the sign up modal-->
+                <div id="subscribeBtn" class="modal fade col-12" role="dialog">
+                        <div class="modal-dialog modal-lg" role="content">
+                            <div class="modal-content">
+                                <div class="modal-header header">
+                                        <h4>Sign up</h4>
+                                        <button type="button" class="close" data-dismiss="modal">
+                                                &times;
+                                        </button>
+                                </div>
+
+                                <div class="modal-body">
+                                        <form action="">
+                                            <div class="form-group">
+                                                    <label for="name"><span class="fa fa-user"> Username</span></label>
+                                                    <input type="text" id="name" class="form-control" placeholder="Enter your Username">
+                                                    
+                                            </div>
+
+                                            <div class="form-group">
+                                                   <label for="mail"><span class="fa fa-envelope-o fa-lg"></span> Email</label>
+                                                    <input type="email" id="mail" class="form-control" placeholder="Enter your email"> 
+                                            </div>
+                                            <div class="form-group">
+                                                    <label for="pass"><span class="fa fa-lock"></span> Password</label>
+                                                    <input type="password" id="pass" class="form-control" placeholder="Enter your password">
+                                            </div>
+
+                                            <div class="form-row">
+                                                    <button type="button" class="btn btn-secondary btn-sm ml-auto" data-dismiss="modal">Cancel</button>
+                                                    <button type="submit" class="btn btn-primary btn-sm ml-1">Sign up</button>
+                                            </div>
+                                        </form>
+                                </div>
+                            </div>
+                        </div>
+                </div>
+            </div>
+                <!--end of the sign up modal-->
+
+                <!--the different sections of the website-->
+        <section id="section1">
+            <div class="container-fluid">
+                    <div class="row justify-content-center">
+                            <div class="col-12 col-sm">
+                                <h4>Advantages Of Online Learning</h4>
+                                <ol>
+                                    <li>Although online education has its limitations, there are several advantages of online learning that explain why eLearning may be the greatest revolution in today’s education. Here are 5 of them.
+                                        </li>
+                                     <li>You can pick the program of your dreams in traditional education, too, but that would involve traveling away from home, living in a completely unknown city, and struggling in an extremely competitive learning environment. With online education, you can take any program or course present in traditional four-year universities.</li>
+                                     <li>Forget about attending classes for hours, sitting in an uncomfortable chair, and suffering from back pain by the end of the day. You will not be bound to physical class session when you opt for online education. All lectures and needed materials are provided via online platforms, so you’ll easily access them from the comfort of your home. You will not take public transport to get to campus, you won’t have to spend money on gas for your car, you won’t have to get up early to get dressed for class… the list of conveniences goes on and on.</li>   
+                                </ol>
+                            </div>
+                    </div>
+            </div>
+        </section>
+
+        <section id="section2">
+            <div class="container-fluid">
+                    <div class="row">
+                        <div class="col-12 col-sm-3">
+                                <div class="card" style="width: 18rem;">
+                                        <img src="img/project1.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">JavaScript</h5>
+                                          <p class="card-text">Learn to code with javascript is high in demand. Start today!!</p>
+                                          <a href="#" class="btn btn-primary">Take the course</a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-12 col-sm-3">
+                                <div class="card" style="width: 18rem;">
+                                        <img src="img/project2.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">PHP</h5>
+                                          <p class="card-text">Learn to code with php is high in demand. Start today!!</p>
+                                          <a href="#" class="btn btn-primary">Take the course</a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-12 col-sm-3">
+                                <div class="card" style="width: 18rem;">
+                                        <img src="img/project3.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Python</h5>
+                                          <p class="card-text">Learn to code with Python is high in demand. Start today!!</p>
+                                          <a href="#" class="btn btn-primary">Take the course</a>
+                                        </div>
+                                </div>
+                        </div>
+                        <div class="col-12 col-sm-3">
+                                <div class="card" style="width: 18rem;">
+                                        <img src="img/project4.jpg" class="card-img-top" alt="...">
+                                        <div class="card-body">
+                                          <h5 class="card-title">Java and Spring</h5>
+                                          <p class="card-text">Learn to code with java is high in demand. Start today!!</p>
+                                          <a href="#" class="btn btn-primary">Take the course</a>
+                                        </div>
+                                </div>
+                        </div>
+                    </div>
+
+                    <div class="row">
+                            <div class="col-12 col-sm-3">
+                                    <div class="card" style="width: 18rem;">
+                                            <img src="img/project4.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Machine learning</h5>
+                                              <p class="card-text">Learn artificial intelligence is high in demand. Start today!!</p>
+                                              <a href="#" class="btn btn-primary">Take the course</a>
+                                            </div>
+                                    </div>
+                            </div>
+                            <div class="col-12 col-sm-3">
+                                    <div class="card" style="width: 18rem;">
+                                            <img src="img/kid1.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Ruby on rails</h5>
+                                              <p class="card-text">Learn to code with Ruby is high in demand. Start today!!</p>
+                                              <a href="#" class="btn btn-primary">Take the course</a>
+                                            </div>
+                                    </div>
+                            </div>
+                            <div class="col-12 col-sm-3">
+                                    <div class="card" style="width: 18rem;">
+                                            <img src="img/kid2.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Deep learning</h5>
+                                              <p class="card-text">Learn artificial intelligence is high in demand. Start today!!</p>
+                                              <a href="#" class="btn btn-primary">Take the course</a>
+                                            </div>
+                                    </div>
+                            </div>
+                            <div class="col-12 col-sm-3">
+                                    <div class="card" style="width: 18rem;">
+                                            <img src="img/kid3.jpg" class="card-img-top" alt="...">
+                                            <div class="card-body">
+                                              <h5 class="card-title">Web design</h5>
+                                              <p class="card-text">Learn how to design website is high in demand. Start today!!</p>
+                                              <a href="#" class="btn btn-primary">Take the course</a>
+                                            </div>
+                                    </div>
+                            </div>
+                            
+                    </div>
+            </div>
+        </section>
+
+
+        <section id="section3">
+            <div class="container-fluid">
+                <div class="row">
+                        <div class="col-12 col-sm-8 mx-auto">
+                            <fieldset>
+                                <legend>Contact informations</legend>
+                                <form action="">
+                                    <div class="form-group">
+                                            <label for="name">name</label>
+                                            <input type="text" id="name" class="form-control">
+                                    </div>
+                                    <div class="form-group">
+                                        <label for="message">message</label>
+                                        <textarea name="" class="form-control" id="message" cols="30" rows="5"></textarea>
+
+                                    </div>
+                                    <button type="button" class="btn btn-success">Submit</button>
+                                </form>
+                            </fieldset>
+                        </div>
+                </div>
+
+            </div>
+        </section>
+
+        <footer id="footer">
+            <div class="container-fluid">
+                <div class="row">
+                    <div class="col-4 offset-md-1 col-sm-2">
+                            <h5>Links</h5>
+                            <ul class="list-unstyled">
+                                <li><a href="#">Home</a></li>
+                                <li><a href="">About</a></li>
+                                <li><a href="#">Courses</a></li>
+                                <li><a href="#">Contact</a></li>
+                            </ul>
+                    </div>
+                    <div class="col-12 col-sm-4 align-self-center">
+                            <div class="text-center">
+                                <a class="btn btn-social-icon btn-google" href="http://google.com/+"><i class="fa fa-google-plus fa-lg"></i></a>
+                                <a class="btn btn-social-icon btn-facebook" href="http://www.facebook.com/profile.php?id="><i class="fa fa-facebook fa-lg"></i></a>
+                                <a class="btn btn-social-icon btn-linkedin" href="http://www.linkedin.com/in/"><i class="fa fa-linkedin fa-lg"></i></a>
+                                <a class="btn btn-social-icon btn-twitter" href="http://twitter.com/"><i class="fa fa-twitter fa-lg"></i></a>
+                                <a class="btn btn-social-icon btn-google" href="http://youtube.com/"><i class="fa fa-youtube fa-lg"></i></a>
+                                <a class="btn btn-social-icon" href="mailto:"><i class="fa fa-envelope-o fa-lg"></i></a>
+                            </div>
+                        </div>
+                     <div class="col-12 col-sm-4">
+                         <h4>Address</h4>
+                         <p>IAI, Libreville Gabon</p>
+                         <p>Tel : +241 04 18 73 62</p>
+
+                     </div>  
+                      
+
+                </div>
+                <div class="row justify-content-center">
+                        <div class="col-auto">
+                            <p>© Copyright 2019 Francis Sénevé</p>
+                        </div>
+                   </div>
+
+            </div>
+        </footer>
+
+                
+        <!-- jQuery first, then Popper.js, then Bootstrap JS. -->
+        <script src="node_modules/jquery/dist/jquery.slim.min.js"></script>
+        <script src="node_modules/popper.js/dist/umd/popper.min.js"></script>
+        <script src="node_modules/bootstrap/dist/js/bootstrap.min.js"></script>
+
+        <script>
+                    $(document).ready(function(){
+                        $("#login").click(function(){
+                            $("#loginModal").modal("show");
+                        });
+
+                        $("#subscribe").click(function(){
+                            $("#subscribeBtn").modal("show");
+                        });
+                    });
+        </script>
+    </body>
+</html>
